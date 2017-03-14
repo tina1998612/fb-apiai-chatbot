@@ -12,8 +12,8 @@ This bot allows you to create, join, or leave a group on Facebook Messenger.<br>
 ## Demo2: Create group
 ![alt text](./images/demo/demo2.gif "Demo2") <br><br>
 
-## Demo2: Create group
-![alt text](./images/demo/demo3.gif "Demo3")<br><br><br>
+## Demo3: Show groups
+![alt text](./images/demo/demo3.png "Demo3")<br><br><br>
 
 # Usage
 To use it, you'll have to open a server. (It's closed now. I used [ngrok](https://ngrok.com) to open one) <br>
