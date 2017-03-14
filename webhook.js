@@ -86,12 +86,12 @@ app.post('/webhook', (req, res) => {
 });
 
 /* GET query from API.ai */
-const apiaiApp = apiai('ae0e8abffbda4ad4844ac1bd52b5c1b2');
+const apiaiApp = apiai("<client access token>"); //insert your own
 
 function reply(res, message){
   request({
     url: 'https://graph.facebook.com/v2.6/me/messages',
-    qs: {access_token: 'EAADsSpqJodUBAOo6Wg8DiFnohv6vzRWuA3UruN36WUHhtPnzVzaWJKlhR1a7ak4x4gFJxdZCFs4s1txEMb8UuuwmE7A0kCZAiqUJzjw2omBstfGOrSZArCzCdfFzN7XDczHYDSN5ZAebagDgL3be9XUknYdRjNo38FM15BwQ1wZDZD'},
+    qs: {access_token: "<access token>"}, //insert your own
     method: 'POST',
     json: {
       recipient: {id: sender},
