@@ -5,9 +5,10 @@ This demo shows the manual integration with [Facebook Messenger](https://develop
 
 This bot allows you to create, join, or leave a group on Facebook Messenger.
 However, to use it, you'll have to open a server. (It's closed now. I used [ngrok](https://ngrok.com) to open one)
-Also, change the urls in both [facebook messenger] and [api.ai]
+Also, change the urls in both facebook messenger and api.ai. (as shown below)
 
 
-<iframe src="//giphy.com/embed/ejf3B2gPKOaJ2" width="480" height="528" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+
+![alt tag](http://giphy.com/embed/ejf3B2gPKOaJ2)
 
 <iframe src="//giphy.com/embed/rlSoFIsDJcQM" width="480" height="528" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
