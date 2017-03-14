@@ -16,7 +16,7 @@ This bot allows you to create, join, or leave a group on Facebook Messenger.<br>
 To use it, you'll have to open a server. (It's closed now. I used [ngrok](https://ngrok.com) to open one) <br>
 Also, change the url in both facebook messenger and api.ai. (as shown below)<br>
 
-## In [facebook](https://developers.facebook.com)
+## In [facebook_developer](https://developers.facebook.com)
 ![alt text](./images/gif/fb_webhook_changes.gif "fb_webhook_changes")
 
 ## In api.ai
