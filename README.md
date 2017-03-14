@@ -8,6 +8,6 @@ However, to use it, you'll have to open a server. (It's closed now. I used [ngro
 Also, change the urls in both [facebook messenger] and [api.ai]
 
 
-<iframe src="//giphy.com/embed/ejf3B2gPKOaJ2" width="480" height="528" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/ejf3B2gPKOaJ2">via GIPHY</a></p>
+<iframe src="//giphy.com/embed/ejf3B2gPKOaJ2" width="480" height="528" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
-<iframe src="//giphy.com/embed/rlSoFIsDJcQM" width="480" height="528" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/rlSoFIsDJcQM">via GIPHY</a></p>
+<iframe src="//giphy.com/embed/rlSoFIsDJcQM" width="480" height="528" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
