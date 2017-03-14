@@ -9,8 +9,6 @@ Also, change the urls in both facebook messenger and api.ai. (as shown below)
 
 
 
-![alt tag](http://giphy.com/embed/ejf3B2gPKOaJ2)
-![alt text](//images/gif/demo1.gif "Demo1")
-![alt text](//images/gif/demo2.gif "Demo2")
+![alt text](./images/gif/demo1.gif "Demo1")
+![alt text](./images/gif/demo2.gif "Demo2")
 
-<iframe src="//giphy.com/embed/rlSoFIsDJcQM" width="480" height="528" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
