@@ -20,7 +20,7 @@ Also, change the url in both facebook messenger and api.ai. (as shown below)<br>
 ![alt text](./images/gif/fb_webhook_changes.gif "fb_webhook_changes")
 
 ## In api.ai:
-![alt text](./images/apiai_chages.png"apiai_chages")
+![alt text](./images/apiai_chages.png "apiai_chages")
 
 
 
