@@ -18,7 +18,7 @@ const server = app.listen(process.env.PORT || 5000, () => {
 
 /* For Facebook Validation */
 app.get('/webhook', (req, res) => {
-  if (req.query['hub.mode'] && req.query['hub.verify_token'] === 'tuxedo_cat') {
+  if (req.query['hub.mode'] && req.query['hub.verify_token'] === 'fb_verify_token') {
     res.status(200).send(req.query['hub.challenge']);
   } else {
     res.status(403).end();
@@ -91,7 +91,7 @@ const apiaiApp = apiai('ae0e8abffbda4ad4844ac1bd52b5c1b2');
 function reply(res, message){
   request({
     url: 'https://graph.facebook.com/v2.6/me/messages',
-    qs: {access_token: 'EAADprTZBLsdMBADN1ROxHCEYcAQTe1s843mYwkhh9BCZCYziNjaMvmRYwje01gm23LJTkSRYQhuELkRx1SA9doMk2lHBarW2LxgxLdBrJ5iu3f4uAMUfWt1BwpYvYiD3W71TNjsehWrZCqttttB68V9Ha2U5cRlcM4L8d0PcwZDZD'},
+    qs: {access_token: 'EAADsSpqJodUBAOo6Wg8DiFnohv6vzRWuA3UruN36WUHhtPnzVzaWJKlhR1a7ak4x4gFJxdZCFs4s1txEMb8UuuwmE7A0kCZAiqUJzjw2omBstfGOrSZArCzCdfFzN7XDczHYDSN5ZAebagDgL3be9XUknYdRjNo38FM15BwQ1wZDZD'},
     method: 'POST',
     json: {
       recipient: {id: sender},
@@ -114,7 +114,11 @@ function sendMessage(event) {
   text = "default";
 
   apiai.on('response', function(res) {
-    let reply_text = res.result.fulfillment.speech;
+    //console.log(res.result.fulfillment);
+    var reply_text;
+    if(reply_json!={}) reply_text = res.result.fulfillment.speech;
+    if(reply_text == undefined) reply_text = (res.result.fulfillment.messages[0]).speech;
+    //console.log(reply_text);
     console.log(reply_json);
 
     if(reply_json.attachment == undefined) reply_json.text = reply_text;
@@ -130,7 +134,7 @@ function sendMessage(event) {
 }
 function UndefinedIntent(res){
   let errorMessage = "sry I can't get it D:";
-        return res.state(400).json({
+        return res.json({
           status:{
             code: 400,
             errorType: errorMessage
@@ -208,6 +212,7 @@ app.post('/ai', (req, res) => {
             ]
           });
         }
+        console.log("attachment created");
         reply_json.attachment = {
           "type": "template",
           "payload": {
